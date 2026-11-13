@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Ich merke mir dich!</h1>
+<p>Name: <input id='name' type='text'></p>
+<button onclick='speichern()'>Speichern!</button>
+<button onclick='loeschen()'>Vergessen!</button>
+<p id='gruss'></p>
+<script>
+let alt = localStorage.getItem('name');
+if (alt) { document.getElementById('gruss').innerText = 'Hallo zurueck, ' + alt + '! Ich habe dich gemerkt!'; }
+function speichern() { let n = document.getElementById('name').value; localStorage.setItem('name', n); document.getElementById('gruss').innerText = 'Gespeichert! ' + n + '! Refresh mal! Ich vergesse dich nicht!'; }
+function loeschen() { localStorage.removeItem('name'); document.getElementById('gruss').innerText = 'Vergessen!'; }
+</script>
+</body>
+</html>
