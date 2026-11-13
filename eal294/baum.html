@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id='titel'>Ich bin ein Blatt!</h1>
+<p id='text'>Finde mich!</p>
+<button onclick='aendern()'>Baum aendern!</button>
+<script>
+function aendern() { document.getElementById('titel').innerText = 'Ich wurde geaendert!'; document.getElementById('titel').style.color = 'red'; document.getElementById('text').innerText = 'DOM = Baum! JS aendert den Baum!'; }
+</script>
+</body>
+</html>
