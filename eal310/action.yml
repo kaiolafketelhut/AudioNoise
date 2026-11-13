@@ -1,0 +1,14 @@
+name: 'OMQ Rate-Spiel'
+description: 'EAL310 - Rate eine Zahl 1-100!'
+author: 'Kai Olaf Ketelhut - OMQ'
+branding:
+  icon: 'target'
+  color: 'green'
+inputs:
+  max-zahl:
+    description: 'Bis zu welcher Zahl?'
+    required: false
+    default: '100'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
