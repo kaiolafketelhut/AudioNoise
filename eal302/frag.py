@@ -1,0 +1,7 @@
+print('Hallo! Ich bin OMQ-Bot!')
+name = input('Wie heisst du? ')
+alter = int(input('Wie alt bist du? '))
+print(f'Hallo {name}!')
+print(f'Du bist {alter} Jahre alt!')
+print(f'In 10 Jahren bist du {alter + 10}!')
+print('Cool, oder?')
