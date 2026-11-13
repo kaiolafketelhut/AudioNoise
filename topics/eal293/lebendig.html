@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset=utf-8><style>button { background: green; color: white; padding: 15px; font-size: 20px; }</style></head>
+<body>
+<h1 id='titel'>Klick den Button!</h1>
+<p>Zaehler: <span id='zahl'>0</span></p>
+<button onclick='klick()'>Klick mich!</button>
+<script>
+let z = 0;
+function klick() { z = z + 1; document.getElementById('zahl').innerText = z; document.getElementById('titel').innerText = 'Geklickt ' + z + ' Mal!'; }
+</script>
+</body>
+</html>
