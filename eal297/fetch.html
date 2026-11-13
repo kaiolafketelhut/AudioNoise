@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Zufalls-Witz!</h1>
+<button onclick='holWitz()'>Neuer Witz!</button>
+<p id='witz'>Klick den Button!</p>
+<script>
+async function holWitz() { document.getElementById('witz').innerText = 'Lade...'; let antwort = await fetch('https://api.chucknorris.io/jokes/random'); let daten = await antwort.json(); document.getElementById('witz').innerText = daten.value; }
+</script>
+</body>
+</html>
